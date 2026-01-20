@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Mira Oja — Audio Designer & Audio Implementation</title>
+  <meta name="description" content="Mira Oja — Audio Designer & Audio Implementation. School game projects on Steam (Unity) and current focus on Unreal + Wwise. Courses hosted on EXPA." />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mira Oja — Audio Designer & Audio Implementation" />
+  <meta property="og:description" content="Game audio designer specializing in Unreal Engine + Wwise implementation. Foley recording, ambient music composition, and interactive audio systems." />
+  <meta property="og:image" content="https://yoursite.com/Assets/headers/header-13candles.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mira Oja — Audio Designer" />
+  <meta name="twitter:description" content="Game audio designer specializing in Unreal Engine + Wwise implementation." />
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="styles.css" as="style">
+  
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mira Oja",
+    "jobTitle": "Audio Designer & Audio Implementation",
+    "description": "Game audio designer specializing in Unreal Engine + Wwise implementation, foley recording, and ambient music composition.",
+    "url": "https://yoursite.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/mira-oja-4071921bb/",
+      "https://dreamlakes1.bandcamp.com",
+      "https://www.expa.fi"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jyväskylä",
+      "addressCountry": "Finland"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "JAMK University of Applied Sciences"
+    },
+    "knowsAbout": [
+      "Audio Design",
+      "Audio Implementation",
+      "Unreal Engine",
+      "Wwise",
+      "FMOD",
+      "Unity",
+      "Foley Recording",
+      "Ambient Music Composition",
+      "Game Audio"
+    ]
+  }
+  </script>
+</head>
+
+<body id="top">
+  <div class="scroll-progress"></div>
+  <button class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 4L10 16M10 4L4 10M10 4L16 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <button class="audio-toggle" aria-label="Toggle ambient audio" title="Toggle ambient audio">
+    <svg class="audio-icon audio-on" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M15.54 8.46C16.4774 9.39764 17.0039 10.6692 17.0039 11.995C17.0039 13.3208 16.4774 14.5924 15.54 15.53" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M19.07 4.93C20.9447 6.80528 21.9979 9.34836 21.9979 12C21.9979 14.6516 20.9447 17.1947 19.07 19.07" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <svg class="audio-icon audio-off" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+      <path d="M11 5L6 9H2V15H6L11 19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="23" y1="9" x2="17" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <line x1="17" y1="9" x2="23" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <div class="volume-slider">
+      <input type="range" min="0" max="100" value="30" class="volume-control" aria-label="Volume control">
+    </div>
+  </button>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announce">
+    <div class="container announce-inner">
+      <p>
+        <strong>Course hosted on EXPA Learning Platform:</strong>
+        Making Environmental Audio with Wwise & Unreal Engine <strong>(Launch: TBA)</strong>
+      </p>
+      <a class="announce-link" href="https://expa.learnworlds.com" target="_blank" rel="noopener">
+        EXPA Learning Platform
+      </a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">◉</span>
+        <span class="brand-text">Mira Oja</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a class="nav-cta" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero reveal">
+      <div class="container">
+        <p class="eyebrow">Audio Designer & Audio Implementation</p>
+        <h1>Audio Designer specializing in interactive audio implementation with Wwise and FMOD.</h1>
+        <p class="lede">
+          I design sound and music, and I build interactive audio logic.
+          My current focus is <strong>Unreal Engine + Wwise</strong> implementation and teaching.
+        </p>
+
+        <p class="small muted" style="margin:0 0 16px;">
+          EXPA Board Member (2023–2025) · Jyväskylä, Finland ·
+          <a href="https://www.linkedin.com/in/mira-oja-4071921bb/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+
+        <div class="hero-actions">
+          <a class="button" href="work.html">View Work</a>
+          <a class="button button-ghost" href="courses.html">Courses</a>
+          <a class="button button-ghost" href="contact.html">Contact</a>
+        </div>
+
+        <!-- Removed hero highlight pills; moved to competencies on About page -->
+      </div>
+    </section>
+
+    <!-- Tabs + Panels -->
+    <section class="section-tight reveal" data-tabs data-default="panel-home-work">
+      <div class="container">
+        <nav class="tabs" aria-label="Homepage sections">
+          <button class="tab" data-panel="panel-home-overview" type="button">Overview</button>
+          <button class="tab active" data-panel="panel-home-work" type="button">Work</button>
+          <button class="tab" data-panel="panel-home-influences" type="button">Influences</button>
+          <button class="tab" data-panel="panel-home-courses" type="button">Courses</button>
+        </nav>
+
+        <div style="margin-top:14px;">
+          <!-- Overview -->
+          <div class="panel" id="panel-home-overview" hidden>
+            <div class="grid grid-2">
+              <div class="card">
+                <h2 class="card-title">What I do</h2>
+                <p class="muted">
+                  Audio design + implementation with a systems-first mindset.
+                  I focus on clarity, feedback, and scalable setups.
+                </p>
+              </div>
+
+              <div class="card">
+                <h2 class="card-title">Now</h2>
+                <p class="muted">
+                  Building implementation workflows in <strong>Unreal Engine + Wwise</strong>,
+                  and creating courses for sound designers on how to implement audio properly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Work -->
+          <div class="panel active" id="panel-home-work">
+            <div class="grid grid-3" data-stagger="90">
+              <article class="work-card">
+                <a class="work-card-link" href="https://store.steampowered.com/app/2200420/13_Candles/" target="_blank" rel="noopener">
+                  <div class="thumb">
+                    <img loading="lazy" src="Assets/headers/13-candles-header.jpg?v=2" alt="13 Candles – first-person horror game" width="1600" height="900">
+                  </div>
+                  <div class="work-card-body">
+                    <h3>13 Candles</h3>
+                    <p class="meta">Horror — music & environmental SFX</p>
+                    <p class="muted small" style="margin:8px 0;">Audio team of 3 | 3-month project | Dark atmospheric soundscapes</p>
+                    <p class="tags"><span>Unity</span><span>Music</span><span>Environmental SFX</span></p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="work-card">
+                <a class="work-card-link" href="https://store.steampowered.com/app/2700100/Last_Minute_Shopping/" target="_blank" rel="noopener">
+                  <div class="thumb">
+                    <img loading="lazy" src="Assets/headers/last-minute-shopping-header.jpg?v=2" alt="Last Minute Shopping – fast-paced first-person game" width="1600" height="900">
+                  </div>
+                  <div class="work-card-body">
+                    <h3>Last Minute Shopping</h3>
+                    <p class="meta">Chaotic first-person game — sound design & UI audio</p>
+                    <p class="muted small" style="margin:8px 0;">Audio team of 2 | Fast-paced action audio | UI and feedback systems</p>
+                    <p class="tags"><span>Unity</span><span>Sound Design</span><span>UI Audio</span></p>
+                  </div>
+                </a>
+              </article>
+
+              <article class="work-card">
+                <a class="work-card-link" href="https://store.steampowered.com/app/2700120/Damaaz_the_Barbarian_Warlock/" target="_blank" rel="noopener">
+                  <div class="thumb">
+                    <img loading="lazy" src="Assets/headers/damaaz-header.jpg?v=2" alt="Damaaz the Barbarian – beat 'em up action game" width="1600" height="900">
+                  </div>
+                  <div class="work-card-body">
+                    <h3>Damaaz the Barbarian</h3>
+                    <p class="meta">Action — sound design & voice</p>
+                    <p class="muted small" style="margin:8px 0;">Audio team of 3 | Combat audio systems | Voice acting & character sounds</p>
+                    <p class="tags"><span>Unity</span><span>Combat Audio</span><span>Voice</span></p>
+                  </div>
+                </a>
+              </article>
+            </div>
+
+            <div class="section-tight">
+              <a class="button button-ghost" href="work.html">See all projects</a>
+            </div>
+          </div>
+
+          <!-- Courses -->
+          <div class="panel" id="panel-home-courses" hidden>
+            <div class="section-head" style="margin-top:10px;">
+              <h2>Courses (hosted on EXPA)</h2>
+              <p>Course delivery is handled through EXPA. This site provides syllabus and updates.</p>
+            </div>
+
+            <div class="grid grid-2">
+              <div class="card">
+                <h2 class="card-title">Environmental Audio (Wwise + Unreal)</h2>
+                <p class="muted">Environmental implementation systems. Launch: TBA.</p>
+                <div class="hero-actions" style="margin-top:12px;">
+                  <a class="button" href="https://expa.learnworlds.com/courses" target="_blank" rel="noopener">View on EXPA</a>
+                  <a class="button button-ghost" href="course_enviromental_audio.html">Syllabus</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <h2 class="card-title">MetaSound for Game Audio</h2>
+                <p class="muted">Planned MetaSound course. Launch: TBA.</p>
+                <div class="hero-actions" style="margin-top:12px;">
+                  <a class="button" href="https://expa.learnworlds.com/courses" target="_blank" rel="noopener">View on EXPA</a>
+                  <a class="button button-ghost" href="course-metasound.html">Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-tight">
+              <a class="button button-ghost" href="courses.html">All courses</a>
+            </div>
+          </div>
+
+          <!-- Influences -->
+          <div class="panel" id="panel-home-influences" hidden>
+            <div class="grid grid-2">
+              <div class="card">
+                <h2 class="card-title">Favorite Games</h2>
+                <ul class="bullets">
+                  <li>Skyrim</li>
+                  <li>Path of Exile 1 & 2</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h2 class="card-title">Music Inspirations</h2>
+                <ul class="bullets">
+                  <li>Lustmord</li>
+                  <li>Apochryos</li>
+                  <li>Atrium Carceri</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Work (full section) -->
+    <section id="work" class="section reveal anchor-target">
+      <div class="container">
+        <div class="section-head">
+          <h2>Work</h2>
+          <p>School game projects released on Steam. Developed in <strong>Unity</strong>.</p>
+        </div>
+
+        <!-- Project filter -->
+        <div class="filter-row" role="toolbar" aria-label="Filter projects by genre">
+          <button class="filter-pill active" data-filter="all">All Projects</button>
+          <button class="filter-pill" data-filter="horror">Horror</button>
+          <button class="filter-pill" data-filter="action">Action</button>
+          <button class="filter-pill" data-filter="shooter">Shooter</button>
+          <button class="filter-pill" data-filter="platformer">Platformer</button>
+        </div>
+
+        <div class="grid grid-3" data-stagger="90">
+          <article class="work-card" data-category="horror">
+            <a class="work-card-link" href="https://store.steampowered.com/app/2200420/13_Candles/" target="_blank" rel="noopener">
+              <div class="thumb"><img loading="lazy" src="Assets/work/13-candles-gameplay.jpg" alt="13 Candles gameplay screenshot showing first-person horror environment" width="800" height="600"></div>
+              <div class="work-card-body">
+                <h3>13 Candles</h3>
+                <p class="meta">First-person horror</p>
+                <p class="muted small">Music plus environmental and interaction SFX focusing on tension and atmosphere.</p>
+                <p class="tags"><span>Unity</span><span>Music</span><span>Environmental SFX</span><span>Horror</span></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="action">
+            <a class="work-card-link" href="https://store.steampowered.com/app/2700120/Damaaz_the_Barbarian_Warlock/" target="_blank" rel="noopener">
+              <div class="thumb"><img loading="lazy" src="Assets/work/damaaz-gameplay.jpg" alt="Damaaz the Barbarian gameplay screenshot showing beat 'em up combat" width="800" height="600"></div>
+              <div class="work-card-body">
+                <h3>Damaaz the Barbarian</h3>
+                <p class="meta">Beat ’em up action</p>
+                <p class="muted small">Combat, abilities, environmental SFX, and NPC voice coordination.</p>
+                <p class="tags"><span>Unity</span><span>Sound Design</span><span>Combat Audio</span><span>Voice</span></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="action">
+            <a class="work-card-link" href="https://store.steampowered.com/app/2700100/Last_Minute_Shopping/" target="_blank" rel="noopener">
+              <div class="thumb"><img loading="lazy" src="Assets/work/last-minute-shopping-gameplay.jpg" alt="Last Minute Shopping gameplay screenshot showing fast-paced first-person gameplay" width="800" height="600"></div>
+              <div class="work-card-body">
+                <h3>Last Minute Shopping</h3>
+                <p class="meta">Chaotic first-person game</p>
+                <p class="muted small">Sound design for actions, interactions, and UI feedback supporting fast pacing.</p>
+                <p class="tags"><span>Unity</span><span>Sound Design</span><span>UI Audio</span><span>Foley</span></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="platformer">
+            <a class="work-card-link" href="https://store.steampowered.com/app/2200470/Ok_I_Pull_Up/" target="_blank" rel="noopener">
+              <div class="thumb"><img loading="lazy" src="Assets/work/ok-I-pull-up-gameplay.jpg?v=3" alt="OK I Pull Up gameplay screenshot showing 3D platforming" width="800" height="600"></div>
+              <div class="work-card-body">
+                <h3>OK I Pull Up</h3>
+                <p class="meta">Hard 3D platformer</p>
+                <p class="muted small">Looping music designed to stay engaging across retries.</p>
+                <p class="tags"><span>Unity</span><span>Music</span><span>Looping</span><span>Game Feel</span></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="shooter">
+            <a class="work-card-link" href="https://store.steampowered.com/app/2200380/Fingerbang_All_Bullets_Pointin/" target="_blank" rel="noopener">
+              <div class="thumb"><img loading="lazy" src="Assets/work/fingerbang-gameplay.jpg" alt="Fingerbang gameplay screenshot showing retro FPS combat" width="800" height="600"></div>
+              <div class="work-card-body">
+                <h3>Fingerbang: All Bullets Pointin'</h3>
+                <p class="meta">Retro FPS</p>
+                <p class="muted small">Impactful weapon SFX with readability and feedback for fast play.</p>
+                <p class="tags"><span>Unity</span><span>Weapon SFX</span><span>Feedback</span><span>FPS</span></p>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="action">
+            <a class="work-card-link" href="https://store.steampowered.com/app/2700080/Bugger_Off/" target="_blank" rel="noopener">
+              <div class="thumb"><img loading="lazy" src="Assets/work/bugger-off-gameplay.jpg" alt="Bugger Off gameplay screenshot showing tower defense action and enemies" width="800" height="600"></div>
+              <div class="work-card-body">
+                <h3>Bugger Off!</h3>
+                <p class="meta">Tower defense</p>
+                <p class="muted small">Clear feedback for enemies, towers, and interactions in a dense mix.</p>
+                <p class="tags"><span>Unity</span><span>Sound Design</span><span>Gameplay Feedback</span><span>Strategy</span></p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses (full section) -->
+    <section id="courses" class="section reveal anchor-target">
+      <div class="container">
+        <div class="section-head">
+          <h2>Courses</h2>
+          <p>Implementation-focused training hosted on <strong>EXPA</strong>.</p>
+        </div>
+
+        <div class="grid grid-2" data-stagger="90">
+          <article class="card">
+            <h3 class="card-title">Making Environmental Audio with Wwise & Unreal Engine</h3>
+            <p class="muted">Systems-first environmental implementation (footsteps, ambience, interiors, caves).</p>
+            <div class="hero-actions" style="margin-top:12px;">
+              <a class="button" href="https://expa.learnworlds.com/courses" target="_blank" rel="noopener">View on EXPA</a>
+              <a class="button button-ghost" href="course_enviromental_audio.html">Syllabus</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">MetaSound for Game Audio</h3>
+            <p class="muted">Planned course on practical MetaSound workflows for interactive/procedural audio.</p>
+            <div class="hero-actions" style="margin-top:12px;">
+              <a class="button" href="https://expa.learnworlds.com/courses" target="_blank" rel="noopener">View on EXPA</a>
+              <a class="button button-ghost" href="course-metasound.html">Details</a>
+            </div>
+          </article>
+        </div>
+
+        <section class="section-tight">
+          <div class="card">
+            <h3 class="card-title">Course updates</h3>
+            <p class="muted">Email is currently used for updates and early access.</p>
+            <div class="hero-actions" style="margin-top:12px;">
+              <a class="button" href="#contact">Contact</a>
+              <a class="button button-ghost" href="https://expa.learnworlds.com" target="_blank" rel="noopener">Open EXPA platform</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- About (full section) -->
+    <section id="about" class="section reveal anchor-target">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>I’m an <strong>Audio Designer</strong> focused on <strong>audio implementation</strong> and interactive systems. Current specialization: <strong>Unreal Engine + Wwise</strong>.</p>
+        </div>
+        <!-- Audio Samples Section -->
+        <section class="card" style="margin-bottom:24px;">
+          <h3 class="card-title">Audio Samples</h3>
+          <p class="muted" style="margin-bottom:16px;">Listen to my latest ambient album "Cloudspaces" on Bandcamp.</p>
+          
+          <div style="display:grid; gap:16px;">
+            <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3665926942/size=large/bgcol=0b0810/linkcol=b67ef6/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://dreamlakes1.bandcamp.com/album/cloudspaces">Cloudspaces by Dream Lakes</a></iframe>
+          </div>
+        </section>
+        <section class="card" style="margin-bottom:24px;">
+          <h3 class="card-title">Professional details</h3>
+          <p class="muted">
+            <strong>Mira Oja</strong><br>
+            Audio Designer & Audio Implementation<br>
+            EXPA Board Member (2023–2025), continuing voluntary work<br>
+            Jyväskylä, Finland<br>
+            <em>Available for freelance and contract work</em>
+          </p>
+          <p class="muted" style="margin-top:12px;">
+            <strong>Education:</strong> JAMK University of Applied Sciences, Game Development
+          </p>
+          <p class="muted small" style="margin-top:8px;">
+            <a href="https://www.linkedin.com/in/mira-oja-4071921bb/" target="_blank" rel="noopener">LinkedIn</a>
+            ·
+            <a href="https://www.expa.fi" target="_blank" rel="noopener">EXPA</a>
+          </p>
+        </section>
+
+        <div class="grid grid-2" data-stagger="90">
+          <div class="card">
+            <h3 class="card-title">Core Competencies</h3>
+            <ul class="bullets">
+              <li>Foley sound recording and design</li>
+              <li>Ambient music composition</li>
+              <li>Electronic music production</li>
+              <li>Collaborative audio team experience</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="section-tight">
+          <div class="card">            <h3 class="card-title">Audio Philosophy</h3>
+            <p class="muted">Specializing in ambient music across diverse styles—from calming soundscapes to dark, atmospheric compositions. Creating immersive audio experiences that enhance mood and narrative depth.</p>
+          </div>
+        </section>
+
+        <section class="section-tight">
+          <div class="card">
+            <h3 class="card-title">Studio work</h3>
+            <p class="muted">Developing a game in Godot with a dedicated team of 4. Establishing a game studio to support our project. Expanding audio expertise through FMOD implementation. More details coming soon.</p>
+          </div>
+        </section>
+
+        <section class="section-tight">
+          <div class="card">
+            <h3 class="card-title">Game Jam Experience</h3>
+            <p class="muted">Participated in <strong>12 different game jams</strong> over the years, including Finnish Game Jam (FGJ), HKI Pride Game Jam, and Spaceship Game Jam with ESA. Often provided music and sound design for multiple projects within the same jam, collaborating across diverse teams and genres. Part of the organizing team for Finnish Game Jam.</p>
+          </div>
+        </section>
+
+        <section class="section-tight">
+          <div class="card">            <h3 class="card-title">Community Involvement</h3>
+            <p class="muted">Hosting monthly board game events for EXPA, bringing together local game enthusiasts and developers for casual play and networking.</p>
+          </div>
+        </section>
+
+        <section class="section-tight">
+          <div class="card">            <h3 class="card-title">Teaching</h3>
+            <p class="muted">Developing practical courses for audio professionals and sound designers. Current focus: Wwise and Unreal Engine implementation. Upcoming: MetaSound fundamentals. Hosted on EXPA Learning Platform.</p>
+            <div class="hero-actions" style="margin-top:12px;">
+              <a class="button" href="#courses">Course sections</a>
+              <a class="button button-ghost" href="https://expa.learnworlds.com/courses" target="_blank" rel="noopener">View on EXPA</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Contact (full section) -->
+    <section id="contact" class="section reveal anchor-target">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>For audio work, collaboration, or course-related inquiries.</p>
+        </div>
+
+        <div class="grid grid-2" data-stagger="90">
+          <section class="card">
+            <h3 class="card-title">Email</h3>
+            <p class="muted">
+              <a href="mailto:miraoja84@gmail.com?subject=Audio%20Inquiry">miraoja84 [at] gmail [dot] com</a>
+            </p>
+            <div class="hero-actions" style="margin-top:12px;">
+              <a class="button" href="mailto:miraoja84@gmail.com?subject=Audio%20Work%20Inquiry">Audio / studio work</a>
+              <a class="button button-ghost" href="mailto:miraoja84@gmail.com?subject=Course%20Interest">Course interest</a>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3 class="card-title">Courses</h3>
+            <p class="muted">Course delivery is hosted on the EXPA Learning Platform.</p>
+            <div class="hero-actions" style="margin-top:12px;">
+              <a class="button" href="https://expa.learnworlds.com/courses" target="_blank" rel="noopener">Open EXPA</a>
+              <a class="button button-ghost" href="#courses">Course sections</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="#contact">Email me</a></li>
+          <li><a href="https://linkedin.com/in/mira-oja" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul class="footer-links">
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="https://expa.learnworlds.com" target="_blank" rel="noopener">EXPA Learning</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Also</h4>
+        <ul class="footer-links">
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="small muted">© 2026 Mira Oja. Audio design, implementation, teaching.</p>
+    </div>
+  </footer>
+
+  <script src="tabs.js?v=4" defer></script>
+  <script>
+    // Fade-in on scroll for elements with .reveal + stagger support
+    (() => {
+      const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduce) return;
+      // Auto-assign stagger delays to children of containers with data-stagger
+      document.querySelectorAll('[data-stagger]').forEach((container) => {
+        const step = Number(container.dataset.stagger) || 80;
+        Array.from(container.children).forEach((child, idx) => {
+          child.classList.add('reveal');
+          child.style.setProperty('--reveal-delay', `${idx * step}ms`);
+        });
+      });
+
+      const items = document.querySelectorAll('.reveal');
+      if (!items.length) return;
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      items.forEach((el) => observer.observe(el));
+    })();
+
+    // Scroll progress indicator
+    (() => {
+      const progressBar = document.querySelector('.scroll-progress');
+      if (!progressBar) return;
+      const updateProgress = () => {
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = scrollHeight > 0 ? (window.scrollY / scrollHeight) * 100 : 0;
+        progressBar.style.transform = `scaleX(${scrolled / 100})`;
+      };
+      window.addEventListener('scroll', updateProgress, { passive: true });
+    })();
+
+    // Back to top button
+    (() => {
+      const backToTop = document.querySelector('.back-to-top');
+      if (!backToTop) return;
+      
+      const toggleButton = () => {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      };
+      
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      
+      window.addEventListener('scroll', toggleButton, { passive: true });
+      toggleButton();
+    })();
+
+    // Ambient audio toggle
+    (() => {
+      const audioToggle = document.querySelector('.audio-toggle');
+      const volumeSlider = document.querySelector('.volume-control');
+      if (!audioToggle || !volumeSlider) return;
+      
+      // Create audio element with "Empty Space" track
+      const ambientAudio = new Audio();
+      ambientAudio.src = 'Assets/audio/Dream Lakes - Empty Space.mp3'; // Ambient track: Dream Lakes - Empty Space
+      ambientAudio.loop = true;
+      ambientAudio.volume = 0.3; // 30% volume for subtle background
+      
+      let isPlaying = false;
+      
+      const iconOn = audioToggle.querySelector('.audio-on');
+      const iconOff = audioToggle.querySelector('.audio-off');
+      
+      // Volume slider control
+      volumeSlider.addEventListener('input', (e) => {
+        ambientAudio.volume = e.target.value / 100;
+      });
+      
+      // Prevent button click when interacting with slider
+      volumeSlider.addEventListener('click', (e) => {
+        e.stopPropagation();
+      });
+      
+      audioToggle.addEventListener('click', () => {
+        if (isPlaying) {
+          ambientAudio.pause();
+          audioToggle.classList.remove('playing');
+          iconOn.style.display = 'none';
+          iconOff.style.display = 'block';
+          audioToggle.setAttribute('aria-label', 'Play ambient audio');
+        } else {
+          ambientAudio.play().catch(err => console.log('Audio play failed:', err));
+          audioToggle.classList.add('playing');
+          iconOn.style.display = 'block';
+          iconOff.style.display = 'none';
+          audioToggle.setAttribute('aria-label', 'Pause ambient audio');
+        }
+        isPlaying = !isPlaying;
+      });
+      
+      // Keyboard shortcuts for audio control
+      document.addEventListener('keydown', (e) => {
+        // Space bar to toggle play/pause
+        if (e.code === 'Space' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+          e.preventDefault();
+          audioToggle.click();
+        }
+        // Escape to stop audio
+        if (e.code === 'Escape' && isPlaying) {
+          audioToggle.click();
+        }
+      });
+    })();
+    
+    // Analytics placeholder
+    // Add your analytics code here (Google Analytics, Plausible, etc.)
+    // Example for Google Analytics:
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+    // gtag('config', 'YOUR-GA-ID');
+    
+    // Project filtering (limit to Work section buttons)
+    (() => {
+      const filterButtons = document.querySelectorAll('#work .filter-pill[data-filter]');
+      const workCards = document.querySelectorAll('#work .work-card');
+      
+      if (!filterButtons.length || !workCards.length) return;
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          const filter = button.dataset.filter;
+          if (!filter) return; // safety: ignore non-work pills
+          
+          // Update active button
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          
+          // Filter cards with animation
+          workCards.forEach((card, index) => {
+            const category = card.dataset.category;
+            const shouldShow = filter === 'all' || category === filter;
+            
+            if (shouldShow) {
+              card.style.display = 'block';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1)';
+              }, index * 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.9)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+    })();
+
+    // Hero pills removed (moved to competencies on About)
+  </script>
+
+</body>
+</html>
